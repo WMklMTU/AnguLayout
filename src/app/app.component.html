@@ -1,4 +1,15 @@
-<div fxLayout="raw" class="parent" fxLayout.lt-md="column">
-    <div fxFlex="30" class="left">Lewy</div>
-    <div fxFlex="70" class="right">Prawy</div>
+<div fxLayout="column" class="parent">
+  <mat-toolbar color="primary">Header</mat-toolbar>
+  <mat-sidenav-container autosize>
+    <mat-sidenav mode="side" opened>
+      <mat-sidenav-content>Text</mat-sidenav-content>
+      <p>Menu</p>
+      <button mat-raised-button>First option</button>
+    </mat-sidenav>
+  </mat-sidenav-container>
+  <div fxLayout="row" class="child">
+    <div fxFlex="200px" class="left">Lewy</div>
+    <div fxFlexFill class="right">Prawy</div>
+  </div>
+  <div fxFlex class="footer">Footer</div>
 </div>
