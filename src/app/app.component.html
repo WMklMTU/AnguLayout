@@ -1,15 +1,7 @@
 <div fxLayout="column" class="parent">
-  <mat-toolbar color="primary">Header</mat-toolbar>
-  <mat-sidenav-container autosize>
-    <mat-sidenav mode="side" opened>
-      <mat-sidenav-content>Text</mat-sidenav-content>
-      <p>Menu</p>
-      <button mat-raised-button>First option</button>
-    </mat-sidenav>
-  </mat-sidenav-container>
-  <div fxLayout="row" class="child">
-    <div fxFlex="200px" class="left">Lewy</div>
-    <div fxFlexFill class="right">Prawy</div>
+  <mat-toolbar class="child-header" color="primary">Header</mat-toolbar>
+  <div fxLayout="row" class="child-main" color="secondary" fxLayoutAlign="center stretch">
+    <div fxFlexFill class="main"><app-navigation></app-navigation></div>
   </div>
-  <div fxFlex class="footer">Footer</div>
+  <mat-toolbar class="child-footer" color="primary">Footer</mat-toolbar>
 </div>
