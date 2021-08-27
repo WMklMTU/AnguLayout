@@ -53,9 +53,9 @@
     <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
     <p>
       <mat-selection-list [multiple]="false">
-        <mat-list-option> Home </mat-list-option>
-        <mat-list-option> Option 1 </mat-list-option>
-        <mat-list-option> Option 2 </mat-list-option>
+        <mat-list-option [routerLink]="['/']"> Home </mat-list-option>
+        <mat-list-option [routerLink]="['chart']"> Chart </mat-list-option>
+        <mat-list-option (click)="showFiller = !showFiller"> Option 2 </mat-list-option>
         <mat-list-option> Option 3 </mat-list-option>
       </mat-selection-list>
     </p>
@@ -69,6 +69,7 @@
       </div>
       <div style="background-color: white; width: 100%; min-height: 800px">
         Content will be placed here.
+        <router-outlet></router-outlet>
       </div>
     </div>
   </mat-drawer-content>
