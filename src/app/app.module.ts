@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './home/home.component';
 import { ChartComponent } from './chart/chart.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts'
 
 @NgModule({
   declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent],
@@ -25,7 +26,8 @@ import { ChartComponent } from './chart/chart.component';
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
