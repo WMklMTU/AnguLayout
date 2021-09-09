@@ -17,7 +17,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { ChartNG2Component } from './chart-ng2/chart-ng2.component';
 import { ChartJSComponent } from './chart-js/chart-js.component'
 
-
+// dupa
 @NgModule({
   declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent, ChartNG2Component, ChartJSComponent],
   imports: [
