@@ -13,10 +13,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './home/home.component';
 import { ChartComponent } from './chart/chart.component';
-import { NgxChartsModule } from '@swimlane/ngx-charts'
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { ChartNG2Component } from './chart-ng2/chart-ng2.component';
+import { ChartJSComponent } from './chart-js/chart-js.component'
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent],
+  declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent, ChartNG2Component, ChartJSComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
