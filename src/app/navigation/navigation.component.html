@@ -10,34 +10,19 @@
         Toggle extra text
       </button>
     </p>
-    <p>
-      <button
-        color="primary"
-        class="nav-button"
-        (click)="showFiller = !showFiller"
-        mat-raised-button
-      >
-        Option 1
-      </button>
-    </p>
-    <p>
-      <button
-        color="primary"
-        class="nav-button"
-        (click)="showFiller = !showFiller"
-        mat-raised-button
-      >
-        Option 2
-      </button>
-    </p>
     <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
     <p>
       <mat-selection-list [multiple]="false">
-        <mat-list-option [routerLink]="['/']"> Home </mat-list-option>
-        <mat-list-option [routerLink]="['chart']"> Chart ngx</mat-list-option>
-        <mat-list-option [routerLink]="['chartNG2']">Chart ng2</mat-list-option
-        >
-        <mat-list-option [routerLink]="['chartJS']"> Chart.js</mat-list-option>
+        <mat-list-option class = "nav-option"[routerLink]="['/']"> Welcome </mat-list-option>
+        <mat-list-option class = "nav-option" [routerLink]="['MonitoringConfiguration']">Monitoring<br>Configuration</mat-list-option>
+        <mat-list-option class = "nav-option"[routerLink]="['chartJS']">Evaluation</mat-list-option>
+        <mat-list-option class = "nav-option"[routerLink]="['chartJS']">Alarm<br>Management</mat-list-option>
+        <mat-list-option class = "nav-option"[routerLink]="['chartJS']">User Control</mat-list-option>
+        <mat-list-option class = "nav-option"[routerLink]="['chartJS']">Revision<br>History</mat-list-option>
+        <mat-list-option class = "nav-option"[routerLink]="['chart']"> Chart ngx</mat-list-option>
+        <mat-list-option class = "nav-option"[routerLink]="['chartNG2']">Chart ng2</mat-list-option>
+        <mat-list-option class = "nav-option"[routerLink]="['chartJS']"> Chart.js</mat-list-option>
+
       </mat-selection-list>
     </p>
   </mat-drawer>

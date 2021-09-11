@@ -15,10 +15,14 @@ import { HomeComponent } from './home/home.component';
 import { ChartComponent } from './chart/chart.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { ChartNG2Component } from './chart-ng2/chart-ng2.component';
-import { ChartJSComponent } from './chart-js/chart-js.component'
+import { ChartJSComponent } from './chart-js/chart-js.component';
+import { MonitoringConfigurationComponent } from './monitoring-configuration/monitoring-configuration.component'
+import { MatTabsModule } from '@angular/material/tabs';
+import { MonitoringParameterComponent } from './monitoring-configuration/monitoring-parameter/monitoring-parameter.component';
+
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent, ChartNG2Component, ChartJSComponent],
+  declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent, ChartNG2Component, ChartJSComponent, MonitoringConfigurationComponent, MonitoringParameterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,7 +33,8 @@ import { ChartJSComponent } from './chart-js/chart-js.component'
     MatButtonModule,
     MatIconModule,
     MatListModule,
-    NgxChartsModule
+    NgxChartsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
