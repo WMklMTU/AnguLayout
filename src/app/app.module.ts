@@ -19,10 +19,11 @@ import { ChartJSComponent } from './chart-js/chart-js.component';
 import { MonitoringConfigurationComponent } from './monitoring-configuration/monitoring-configuration.component'
 import { MatTabsModule } from '@angular/material/tabs';
 import { MonitoringParameterComponent } from './monitoring-configuration/monitoring-parameter/monitoring-parameter.component';
+import { ToolbarComponent } from './monitoring-configuration/toolbar/toolbar.component';
 
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent, ChartNG2Component, ChartJSComponent, MonitoringConfigurationComponent, MonitoringParameterComponent],
+  declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent, ChartNG2Component, ChartJSComponent, MonitoringConfigurationComponent, MonitoringParameterComponent, ToolbarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

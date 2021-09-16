@@ -1,7 +1,7 @@
 .mat-drawer {
     width: 200px;
 }
-.child-main {    
+.child-main {
     height: auto;
 }
 .child-header {
@@ -9,4 +9,7 @@
 }
 .child-footer {
     height: 40px;
+}
+.parent{
+  align-items: stretch
 }
