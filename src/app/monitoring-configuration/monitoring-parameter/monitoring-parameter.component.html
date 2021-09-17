@@ -1,1 +1,107 @@
-<p>monitoring-parameter works!</p>
+<div fxLayout="column" fxLayoutAlign=" stretch">
+  <mat-toolbar
+    style="min-height: 50px !important; height: 50px !important"
+    color="secondary"
+    ><h2>Overview of Calculation Parameter</h2>
+  </mat-toolbar>
+  <div fxFlex>
+    <div fxLayout="row" fxLayoutAlign=" stretch">
+      <div fxFlex="700px" class="table-header">
+        List of Calculation Parameter
+      </div>
+      <div fxFlex="100px"></div>
+      <div fxFlex="700px" class="table-header">
+        Assigned Monitoring Parameter (up to 50)
+      </div>
+      <div fxFlex="100px"></div>
+    </div>
+  </div>
+  <div fxFlex>
+    <div fxLayout="row" fxLayoutAlign=" stretch">
+      <div fxFlex="700px">
+        <div class="example-container">
+          <table mat-table [dataSource]="dataSource" class="parameter-table">
+            <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+
+            <!-- Parameter Column -->
+            <ng-container matColumnDef="parameter">
+              <th mat-header-cell *matHeaderCellDef>Parameter</th>
+              <td mat-cell *matCellDef="let element">
+                {{ element.parameter }}
+              </td>
+            </ng-container>
+
+            <!-- Unit Column -->
+            <ng-container matColumnDef="unit">
+              <th mat-header-cell *matHeaderCellDef>Unit</th>
+              <td mat-cell *matCellDef="let element">{{ element.unit }}</td>
+            </ng-container>
+
+            <!-- Description Column -->
+            <ng-container matColumnDef="description">
+              <th mat-header-cell *matHeaderCellDef>Description</th>
+              <td mat-cell *matCellDef="let element">
+                {{ element.descriptio }}
+              </td>
+            </ng-container>
+
+            <!-- Revision Column -->
+            <ng-container matColumnDef="revision">
+              <th mat-header-cell *matHeaderCellDef>Revision</th>
+              <td mat-cell *matCellDef="let element">{{ element.revision }}</td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+          </table>
+        </div>
+      </div>
+
+      <div fxFlex="100px">
+        <div
+          fxLayout="column"
+          fxLayoutAlign="space-around center"
+          style="height: 200px"
+        >
+          <button mat-raised-button color="primary" class="list-button">
+            <mat-icon>arrow_right</mat-icon>
+          </button>
+          <button mat-raised-button color="primary" class="list-button">
+            <mat-icon>skip_next</mat-icon>
+          </button>
+          <button mat-raised-button color="primary" class="list-button">
+            <mat-icon>arrow_left</mat-icon>
+          </button>
+          <button mat-raised-button color="primary" class="list-button">
+            <mat-icon>skip_previous</mat-icon>
+          </button>
+        </div>
+      </div>
+
+      <div fxFlex="700px" class="table-header">
+        Assigned Monitoring Parameter (up to 50)
+      </div>
+      <div fxFlex="100px">
+        <div
+          fxLayout="column"
+          fxLayoutAlign="space-around center"
+          style="height: 200px"
+        >
+          <button mat-raised-button color="primary" class="list-button">
+            <mat-icon>arrow_drop_up</mat-icon>
+          </button>
+          <button mat-raised-button color="primary" class="list-button">
+            <mat-icon>arrow_drop_down</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div fxFlex style="background-color: yellowgreen">second</div>
+
+  <div fxLayout="row" fxLayoutAlign=" stretch">
+    <div fxFlex style="background-color: aqua">first</div>
+    <div fxFlex style="background-color: yellowgreen">second</div>
+  </div>
+</div>

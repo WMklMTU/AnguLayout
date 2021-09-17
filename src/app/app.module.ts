@@ -18,6 +18,7 @@ import { ChartNG2Component } from './chart-ng2/chart-ng2.component';
 import { ChartJSComponent } from './chart-js/chart-js.component';
 import { MonitoringConfigurationComponent } from './monitoring-configuration/monitoring-configuration.component'
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatTableModule } from '@angular/material/table';
 import { MonitoringParameterComponent } from './monitoring-configuration/monitoring-parameter/monitoring-parameter.component';
 import { ToolbarComponent } from './monitoring-configuration/toolbar/toolbar.component';
 
@@ -35,7 +36,8 @@ import { ToolbarComponent } from './monitoring-configuration/toolbar/toolbar.com
     MatIconModule,
     MatListModule,
     NgxChartsModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent],

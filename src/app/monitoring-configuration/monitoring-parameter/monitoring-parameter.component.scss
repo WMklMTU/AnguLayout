@@ -1,0 +1,31 @@
+.table-header{
+  background-color: rgb(200, 200, 200);
+  padding: 3px;
+}
+
+.list-button{
+  height: 40px;
+  width: 40px;
+}
+
+table {
+  width: 100%;
+}
+
+.example-container {
+  height: 200px;
+  max-width: 100%;
+  overflow: auto;
+}
+
+th.mat-header-cell {
+  color: black;
+}
+
+td.mat-cell {
+  color: black;
+}
+
+tr.mat-row {
+  height: 30px !important;
+}
