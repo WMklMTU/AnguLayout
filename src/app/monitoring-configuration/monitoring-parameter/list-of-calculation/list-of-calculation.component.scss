@@ -1,6 +1,5 @@
-.table-header{
-  background-color: rgb(200, 200, 200);
-  padding: 3px;
+.param-table{
+  background-color: white;
 }
 
 .list-button{
@@ -27,14 +26,14 @@ th.mat-header-cell {
   color: black;
 }
 
+.mat-header-row {
+  height: 40px;
+}
+
 td.mat-cell {
   color: black;
 }
 
 tr.mat-row {
   height: 30px !important;
-}
-
-.break-line{
-  height: 5px;
 }

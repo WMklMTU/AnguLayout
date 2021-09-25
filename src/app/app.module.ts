@@ -21,10 +21,15 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatTableModule } from '@angular/material/table';
 import { MonitoringParameterComponent } from './monitoring-configuration/monitoring-parameter/monitoring-parameter.component';
 import { ToolbarComponent } from './monitoring-configuration/toolbar/toolbar.component';
+import { ListOfCalculationComponent } from './monitoring-configuration/monitoring-parameter/list-of-calculation/list-of-calculation.component';
+import { AssignedMonitoringComponent } from './monitoring-configuration/monitoring-parameter/assigned-monitoring/assigned-monitoring.component';
+import { DetailsSelectedComponent } from './monitoring-configuration/monitoring-parameter/details-selected/details-selected.component';
+import { ExampleCalculationComponent } from './monitoring-configuration/monitoring-parameter/example-calculation/example-calculation.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent, ChartNG2Component, ChartJSComponent, MonitoringConfigurationComponent, MonitoringParameterComponent, ToolbarComponent],
+  declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent, ChartNG2Component, ChartJSComponent, MonitoringConfigurationComponent, MonitoringParameterComponent, ToolbarComponent, ListOfCalculationComponent, AssignedMonitoringComponent, DetailsSelectedComponent, ExampleCalculationComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -37,7 +42,8 @@ import { ToolbarComponent } from './monitoring-configuration/toolbar/toolbar.com
     MatListModule,
     NgxChartsModule,
     MatTabsModule,
-    MatTableModule
+    MatTableModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent],
