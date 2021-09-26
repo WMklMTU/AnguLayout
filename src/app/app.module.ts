@@ -26,6 +26,7 @@ import { AssignedMonitoringComponent } from './monitoring-configuration/monitori
 import { DetailsSelectedComponent } from './monitoring-configuration/monitoring-parameter/details-selected/details-selected.component';
 import { ExampleCalculationComponent } from './monitoring-configuration/monitoring-parameter/example-calculation/example-calculation.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     NgxChartsModule,
     MatTabsModule,
     MatTableModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent],
