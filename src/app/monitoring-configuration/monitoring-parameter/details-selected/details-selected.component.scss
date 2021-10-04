@@ -1,6 +1,9 @@
 .grid-container {
   display: grid;
   grid-template-columns: 200px auto;
-  justify-content: space-between;
   grid-gap: 10px;
+}
+
+.form-param-input-id{
+  width: 300px;
 }
