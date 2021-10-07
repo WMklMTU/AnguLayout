@@ -1,17 +1,6 @@
 <mat-drawer-container class="nav-menu-container" autosize>
   <mat-drawer #nav_menu class="side-navigation" mode="side">
     <p>
-      <button
-        color="primary"
-        class="nav-button"
-        (click)="showFiller = !showFiller"
-        mat-raised-button
-      >
-        Toggle extra text
-      </button>
-    </p>
-    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-    <p>
       <mat-selection-list [multiple]="false">
         <mat-list-option class = "nav-option"[routerLink]="['/']"> Welcome </mat-list-option>
         <mat-list-option class = "nav-option" [routerLink]="['MonitoringConfiguration']">Monitoring<br>Configuration</mat-list-option>
@@ -22,9 +11,18 @@
         <mat-list-option class = "nav-option"[routerLink]="['chart']"> Chart ngx</mat-list-option>
         <mat-list-option class = "nav-option"[routerLink]="['chartNG2']">Chart ng2</mat-list-option>
         <mat-list-option class = "nav-option"[routerLink]="['chartJS']"> Chart.js</mat-list-option>
-
       </mat-selection-list>
     </p>
+    <p></p>
+    <p>
+      <button
+        color="primary"
+        class="nav-button"
+        (click)="showFiller = !showFiller"
+        mat-raised-button
+      >Logout</button>
+    </p>
+    <p *ngIf="showFiller">Logout</p>
   </mat-drawer>
   <mat-drawer-content>
     <div fxLayout="row" class="menu-icon-column">

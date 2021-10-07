@@ -27,10 +27,16 @@ import { DetailsSelectedComponent } from './monitoring-configuration/monitoring-
 import { ExampleCalculationComponent } from './monitoring-configuration/monitoring-parameter/example-calculation/example-calculation.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { ScanSelectionFilterComponent } from './monitoring-configuration/scan-selection-filter/scan-selection-filter.component';
+import { RatingCorrectionComponent } from './monitoring-configuration/rating-correction/rating-correction.component';
+import { ReferenceDatasetComponent } from './monitoring-configuration/reference-dataset/reference-dataset.component';
+import { StatisticalMethodsComponent } from './monitoring-configuration/statistical-methods/statistical-methods.component';
+import { AlertSelectionComponent } from './monitoring-configuration/alert-selection/alert-selection.component';
+import { PublishComponent } from './monitoring-configuration/publish/publish.component';
 
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent, ChartNG2Component, ChartJSComponent, MonitoringConfigurationComponent, MonitoringParameterComponent, ToolbarComponent, ListOfCalculationComponent, AssignedMonitoringComponent, DetailsSelectedComponent, ExampleCalculationComponent],
+  declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent, ChartNG2Component, ChartJSComponent, MonitoringConfigurationComponent, MonitoringParameterComponent, ToolbarComponent, ListOfCalculationComponent, AssignedMonitoringComponent, DetailsSelectedComponent, ExampleCalculationComponent, ScanSelectionFilterComponent, RatingCorrectionComponent, ReferenceDatasetComponent, StatisticalMethodsComponent, AlertSelectionComponent, PublishComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
