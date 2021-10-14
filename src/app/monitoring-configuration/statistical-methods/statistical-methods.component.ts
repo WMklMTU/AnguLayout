@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-statistical-methods',
+  selector: 'mp-statistical-methods',
   templateUrl: './statistical-methods.component.html',
   styleUrls: ['./statistical-methods.component.scss']
 })

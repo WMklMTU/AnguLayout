@@ -33,10 +33,15 @@ import { ReferenceDatasetComponent } from './monitoring-configuration/reference-
 import { StatisticalMethodsComponent } from './monitoring-configuration/statistical-methods/statistical-methods.component';
 import { AlertSelectionComponent } from './monitoring-configuration/alert-selection/alert-selection.component';
 import { PublishComponent } from './monitoring-configuration/publish/publish.component';
+import { EvaluationComponent } from './evaluation/evaluation.component';
+import { AlarmManagementComponent } from './alarm-management/alarm-management.component';
+import { UserControlComponent } from './user-control/user-control.component';
+import { RevisionHistoryComponent } from './revision-history/revision-history.component';
+import { SmartFilterComponent } from './monitoring-configuration/scan-selection-filter/smart-filter/smart-filter.component';
 
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent, ChartNG2Component, ChartJSComponent, MonitoringConfigurationComponent, MonitoringParameterComponent, ToolbarComponent, ListOfCalculationComponent, AssignedMonitoringComponent, DetailsSelectedComponent, ExampleCalculationComponent, ScanSelectionFilterComponent, RatingCorrectionComponent, ReferenceDatasetComponent, StatisticalMethodsComponent, AlertSelectionComponent, PublishComponent],
+  declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent, ChartNG2Component, ChartJSComponent, MonitoringConfigurationComponent, MonitoringParameterComponent, ToolbarComponent, ListOfCalculationComponent, AssignedMonitoringComponent, DetailsSelectedComponent, ExampleCalculationComponent, ScanSelectionFilterComponent, RatingCorrectionComponent, ReferenceDatasetComponent, StatisticalMethodsComponent, AlertSelectionComponent, PublishComponent, EvaluationComponent, AlarmManagementComponent, UserControlComponent, RevisionHistoryComponent, SmartFilterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

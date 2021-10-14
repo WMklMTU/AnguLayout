@@ -15,7 +15,7 @@ const ELEMENT_DATA: CalculationParameter[] =  [
 ];
 
 @Component({
-  selector: 'app-monitoring-parameter',
+  selector: 'mp-monitoring-parameter',
   templateUrl: './monitoring-parameter.component.html',
   styleUrls: ['./monitoring-parameter.component.scss']
 })

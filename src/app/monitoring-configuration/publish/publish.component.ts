@@ -13,7 +13,7 @@ const ELEMENT_DATA: RevisionParameters[] = [
 ];
 
 @Component({
-  selector: 'app-publish',
+  selector: 'mp-publish',
   templateUrl: './publish.component.html',
   styleUrls: ['./publish.component.scss']
 })

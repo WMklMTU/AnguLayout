@@ -2,15 +2,15 @@
   <mat-drawer #nav_menu class="side-navigation" mode="side">
     <p>
       <mat-selection-list [multiple]="false">
-        <mat-list-option class = "nav-option"[routerLink]="['/']"> Welcome </mat-list-option>
-        <mat-list-option class = "nav-option" [routerLink]="['MonitoringConfiguration']">Monitoring<br>Configuration</mat-list-option>
-        <mat-list-option class = "nav-option"[routerLink]="['chartJS']">Evaluation</mat-list-option>
-        <mat-list-option class = "nav-option"[routerLink]="['chartJS']">Alarm<br>Management</mat-list-option>
-        <mat-list-option class = "nav-option"[routerLink]="['chartJS']">User Control</mat-list-option>
-        <mat-list-option class = "nav-option"[routerLink]="['chartJS']">Revision<br>History</mat-list-option>
-        <mat-list-option class = "nav-option"[routerLink]="['chart']"> Chart ngx</mat-list-option>
+        <mat-list-option class = "nav-option"[routerLink]="['/']">Welcome</mat-list-option>
+        <mat-list-option class = "nav-option"[routerLink]="['MonitoringConfiguration']">Monitoring<br>Configuration</mat-list-option>
+        <mat-list-option class = "nav-option"[routerLink]="['Evaluation']">Evaluation</mat-list-option>
+        <mat-list-option class = "nav-option"[routerLink]="['AlarmManagement']">Alarm<br>Management</mat-list-option>
+        <mat-list-option class = "nav-option"[routerLink]="['UserControl']">User Control</mat-list-option>
+        <mat-list-option class = "nav-option"[routerLink]="['RevisionHistory']">Revision<br>History</mat-list-option>
+        <mat-list-option class = "nav-option"[routerLink]="['chart']">Chart ngx</mat-list-option>
         <mat-list-option class = "nav-option"[routerLink]="['chartNG2']">Chart ng2</mat-list-option>
-        <mat-list-option class = "nav-option"[routerLink]="['chartJS']"> Chart.js</mat-list-option>
+        <mat-list-option class = "nav-option"[routerLink]="['chartJS']">Chart.js</mat-list-option>
       </mat-selection-list>
     </p>
     <p></p>
@@ -31,7 +31,7 @@
           <mat-icon>more_vert</mat-icon>
         </button>
       </div>
-      <div style="background-color: white; width: 100%; min-height: 800px">
+      <div class="router-space">
         <router-outlet></router-outlet>
       </div>
     </div>

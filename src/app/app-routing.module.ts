@@ -5,6 +5,10 @@ import { ChartNG2Component } from './chart-ng2/chart-ng2.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MonitoringConfigurationComponent } from './monitoring-configuration/monitoring-configuration.component';
+import { EvaluationComponent } from './evaluation/evaluation.component';
+import { AlarmManagementComponent } from './alarm-management/alarm-management.component';
+import { UserControlComponent } from './user-control/user-control.component';
+import { RevisionHistoryComponent } from './revision-history/revision-history.component';
 
 
 const routes: Routes = [
@@ -12,8 +16,11 @@ const routes: Routes = [
   {path:'chart', component: ChartComponent},
   {path:'chartNG2', component: ChartNG2Component},
   {path:'chartJS', component: ChartJSComponent},
-  {path:'MonitoringConfiguration', component: MonitoringConfigurationComponent}
-
+  {path:'MonitoringConfiguration', component: MonitoringConfigurationComponent},
+  {path:'Evaluation', component: EvaluationComponent},
+  {path:'AlarmManagement', component: AlarmManagementComponent},
+  {path:'UserControl', component: UserControlComponent},
+  {path:'RevisionHistory', component: RevisionHistoryComponent}
 ];
 
 @NgModule({

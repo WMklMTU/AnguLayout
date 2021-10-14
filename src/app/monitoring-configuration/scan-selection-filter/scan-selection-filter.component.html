@@ -1,7 +1,48 @@
-<div fxLayout="column" fxLayoutAlign=" stretch">
-  <mat-toolbar
-    style="min-height: 50px !important; height: 50px !important"
-    color="secondary"
-    ><h2>Overview of Calculation Parameter</h2>
-  </mat-toolbar>
+<div fxLayout="row" fxLayoutAlign="stretch">
+  <div fxFlex="1200px">
+    <mp-ssf-smart-filter></mp-ssf-smart-filter>
+  </div>
+  <div fxFlex="400px">
+    <div fxLayout="column" fxLayoutAlign="stretch">
+      <div fxFlex="300px">
+        <div fxLayout="column" fxLayoutAlign="space-around center" style="height: 250px">
+          <div fxFlex="25px"></div>
+          <div fxFlex>
+            <button color="primary" class="nav-button" mat-raised-button>
+              Data Group
+            </button>
+          </div>
+          <div fxFlex>
+            <button color="primary" class="nav-button" mat-raised-button>
+              Remove Filter
+            </button>
+          </div>
+          <div fxFlex>
+            <button color="primary" class="nav-button" mat-raised-button>
+              Reset Filter
+            </button>
+          </div>
+          <div fxFlex>
+            <button color="primary" class="nav-button" mat-raised-button>
+              Confirm Filter
+            </button>
+          </div>
+        </div>
+      </div>
+      <div fxFlex="500px">
+        <div>
+          Filter Rules
+          <form>
+            <input
+              class="form-param-input-large"
+              type="text"
+              id="fname"
+              name="fname"
+              style="height: 100px"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
