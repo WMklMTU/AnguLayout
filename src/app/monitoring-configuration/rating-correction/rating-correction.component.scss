@@ -1,0 +1,33 @@
+.tab-layout{
+  padding: 20px 10px 10px 40px;
+  width: 800px;
+}
+
+.field-header{
+  background-color: rgb(200, 200, 200);
+  font-size: large;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+
+.buttons-field{
+  background-color: rgb(100, 150, 200);
+  border-style: solid;
+  border-width: thin;
+}
+
+.rating-correction-button-no{
+  width: 200px;
+  height: 100px;
+  background-color: MidnightBlue;
+  color: white;
+  font-size: large;
+  margin: 25px;
+}
+
+.rating-correction-button-yes{
+  width: 200px;
+  height: 100px;
+  font-size: large;
+  margin: 25px;
+}
