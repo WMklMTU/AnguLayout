@@ -12,4 +12,234 @@
       </div>
     </div>
   </div>
+  <div fxFlex="50px"></div>
+  <div fxFlex="25px" class="field-header">Settings</div>
+  <div fxFlex class="settings-field">
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+      <div fxflex>
+        <div class="settings-description">Available Codes:<br /><br /></div>
+        <form>
+          <input
+            class="codes-input-large"
+            type="text"
+            id="availableCodesInput"
+            name="availableCodesInput"
+          />
+        </form>
+      </div>
+      <div fxflex="50px">
+        <div
+          fxLayout="column"
+          fxLayoutAlign="space-between center"
+          style="height: 80px"
+        >
+          <button mat-raised-button color="primary" class="list-button">
+            <mat-icon>arrow_right</mat-icon>
+          </button>
+          <button mat-raised-button color="primary" class="list-button">
+            <mat-icon>arrow_left</mat-icon>
+          </button>
+        </div>
+      </div>
+      <div fxflex>
+        <div class="settings-description">Selected Codes:<br /><br /></div>
+        <form>
+          <input
+            class="codes-input-large"
+            type="text"
+            id="selectedCodesInput"
+            name="selectedCodesInput"
+          />
+        </form>
+      </div>
+      <div fxflex>
+        <div class="settings-description">Interpolate:<br /><br /></div>
+        <select
+          name="interpolate-method"
+          id="interpolate-method"
+          style="width: 100%"
+        >
+          <option value="met0"></option>
+          <option value="met1">Met 1</option>
+          <option value="met2">Met 2</option>
+          <option value="met3">Met 3</option>
+          <option value="met4">Met 4</option>
+        </select>
+        <div>
+          =
+          <form>
+            <input
+              class=""
+              type="text"
+              id="iterpolateParamInput"
+              name="iterpolateParamInput"
+            />
+          </form>
+          <!-- <mat-form-field appearance="fill">
+          <mat-label>Method</mat-label>
+          <select>
+            <option value=""></option>
+            <option value="met1">Met 1</option>
+            <option value="met2">Met 2</option>
+            <option value="met3">Met 3</option>
+            <option value="met4">Met 4</option>
+          </select>
+        </mat-form-field> -->
+          count of<br />independent codes:
+          <div>
+            =
+            <form>
+              <input
+                class=""
+                type="text"
+                id="countOfIndependentCodesInput"
+                name="countOfIndependentCodesInput"
+              />
+            </form>
+            min 2 for linear<br />min 3 for quadratic
+          </div>
+        </div>
+      </div>
+      <div fxflex>
+        Regression:<br /><br />
+        <div fxLayout="column" fxLayoutAlign="center center">
+          <div fxflex>
+            <button class="regression-linear-button">linear</button>
+          </div>
+          <div fxflex>
+            <button class="regression-quadratic-button">quadratic</button>
+          </div>
+          <div fxflex>
+            <button class="calculate-rating-correction--button">
+              calculate rating<br />correction
+            </button>
+          </div>
+        </div>
+      </div>
+      <div fxflex style="background-color: burlywood">
+        <div class="settings-description">
+          Engine list with not sufficient<br />independent Codes:
+        </div>
+        <form>
+          <input
+            class="codes-input-large"
+            type="text"
+            id="engineListInput"
+            name="engineListInput"
+          />
+        </form>
+        <div class="filtered-engines-button">
+          <button mat-raised-button color="primary">
+            <span style="padding-right: 3px">Filtered Engines </span
+            ><mat-icon>post_add</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div fxFlex="25px"></div>
+  <div fxFlex>
+    <!-- <mat-grid-list cols="3">
+      <mat-grid-tile style="width: 50px;">11111</mat-grid-tile>
+      <mat-grid-tile>22222</mat-grid-tile>
+      <mat-grid-tile>333333</mat-grid-tile>
+      <mat-grid-tile>444444</mat-grid-tile>
+    </mat-grid-list> -->
+    <div class="grid-container">
+      <div class="grid-item-header">Available Codes:</div>
+      <div class="grid-item-header"></div>
+      <div class="grid-item-header">Selected Codes:</div>
+      <div class="grid-item-header">Interpolate:</div>
+      <div class="grid-item-header">Regression:</div>
+      <div class="grid-item-header">
+        Engine list with not sufficient<br />independent Codes:
+      </div>
+      <div class="grid-item">
+        <form>
+          <input
+            class="codes-input-large"
+            type="text"
+            id="availableCodesInput"
+            name="availableCodesInput"
+          />
+        </form>
+      </div>
+      <div class="grid-item" style="text-align: center; padding-top: 30px">
+        <button mat-raised-button color="primary" class="list-button">
+          <mat-icon>arrow_right</mat-icon>
+        </button>
+
+        <button mat-raised-button color="primary" class="list-button">
+          <mat-icon>arrow_left</mat-icon>
+        </button>
+      </div>
+      <div class="grid-item">
+        <form>
+          <input
+            class="codes-input-large"
+            type="text"
+            id="selectedCodesInput"
+            name="selectedCodesInput"
+          />
+        </form>
+      </div>
+      <div class="grid-item">
+        <div class="grid-item-line">
+          <select
+            name="interpolate-method"
+            id="interpolate-method"
+            class="interpolate-method"
+          >
+            <option value="met0"></option>
+            <option value="met1">Met 1</option>
+            <option value="met2">Met 2</option>
+            <option value="met3">Met 3</option>
+            <option value="met4">Met 4</option>
+          </select>
+        </div>
+        <div class="grid-item-line">
+          <div class="interpolate-input-equal">
+            <label>=  </label>
+            <input
+              class="iterpolate-param-input"
+              type="text"
+              id="iterpolateParamInput"
+              name="iterpolateParamInput"
+            />
+          </div>
+        </div>
+        <!-- <mat-form-field appearance="fill">
+        <mat-label>Method</mat-label>
+        <select>
+          <option value=""></option>
+          <option value="met1">Met 1</option>
+          <option value="met2">Met 2</option>
+          <option value="met3">Met 3</option>
+          <option value="met4">Met 4</option>
+        </select>
+      </mat-form-field> -->
+        <div class="grid-item-line" style="text-align: center">
+          count of<br />independent codes:
+        </div>
+
+        <div class="grid-item-line">
+          <div class="interpolate-input-equal">
+            <label>=  </label>
+
+            <input
+              class="iterpolate-param-input"
+              type="text"
+              id="countOfIndependentCodesInput"
+              name="countOfIndependentCodesInput"
+            />
+          </div>
+        </div>
+        <div class="grid-item-line">
+          min 2 for linear<br />min 3 for quadratic
+        </div>
+      </div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+    </div>
+  </div>
 </div>

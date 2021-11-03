@@ -39,6 +39,7 @@ import { UserControlComponent } from './user-control/user-control.component';
 import { RevisionHistoryComponent } from './revision-history/revision-history.component';
 import { SmartFilterComponent } from './monitoring-configuration/scan-selection-filter/smart-filter/smart-filter.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent, ChartNG2Component, ChartJSComponent, MonitoringConfigurationComponent, MonitoringParameterComponent, ToolbarComponent, ListOfCalculationComponent, AssignedMonitoringComponent, DetailsSelectedComponent, ExampleCalculationComponent, ScanSelectionFilterComponent, RatingCorrectionComponent, ReferenceDatasetComponent, StatisticalMethodsComponent, AlertSelectionComponent, PublishComponent, EvaluationComponent, AlarmManagementComponent, UserControlComponent, RevisionHistoryComponent, SmartFilterComponent],
@@ -57,7 +58,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatTableModule,
     MatFormFieldModule,
     MatGridListModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent],

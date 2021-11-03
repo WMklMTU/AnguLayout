@@ -1,22 +1,26 @@
-.tab-layout{
+.tab-layout {
   padding: 20px 10px 10px 40px;
-  width: 800px;
+  width: 1200px;
 }
 
-.field-header{
+.field-header {
   background-color: rgb(200, 200, 200);
   font-size: large;
   padding: 3px;
   margin-bottom: 5px;
 }
 
-.buttons-field{
-  background-color: rgb(100, 150, 200);
+.buttons-field {
+  // background-color: rgb(100, 150, 200);
   border-style: solid;
   border-width: thin;
 }
 
-.rating-correction-button-no{
+.settings-field {
+  background-color: rgb(100, 150, 200);
+}
+
+.rating-correction-button-no {
   width: 200px;
   height: 100px;
   background-color: MidnightBlue;
@@ -25,9 +29,69 @@
   margin: 25px;
 }
 
-.rating-correction-button-yes{
+.rating-correction-button-yes {
   width: 200px;
   height: 100px;
   font-size: large;
   margin: 25px;
+}
+
+.codes-input-large {
+  width: 97%;
+  height: 200px;
+}
+
+.settings-description {
+  text-align: center;
+  width: 100%;
+}
+
+.filtered-engines-button {
+  margin-top: 5px;
+  width: 100%;
+  justify-content: center;
+}
+
+mat-grid-tile {
+  background: lightblue;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 210px 100px 210px 210px 210px 210px;
+  background-color: #2196f3;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+.grid-item-line {
+  margin-bottom: 5px;
+}
+
+.grid-item-header {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  text-align: center;
+  height: 30px;
+}
+
+.list-button {
+  margin-bottom: 10px;
+}
+
+.interpolate-method{
+  width: 100%;
+}
+
+.iterpolate-param-input {
+  width: 70%;
+  margin-left: 2px;
+}
+
+.interpolate-input-equal{
+  display: inline-block;
+  justify-content: right;
+  text-align: right;
 }
