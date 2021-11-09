@@ -6,9 +6,24 @@ import {FormControl} from '@angular/forms';
   templateUrl: './rating-correction.component.html',
   styleUrls: ['./rating-correction.component.scss']
 })
+
 export class RatingCorrectionComponent implements OnInit {
 
-  constructor() { }
+  settingsIsShown: boolean;
+
+  constructor() {
+    this.settingsIsShown = false;
+  }
+
+  toggleSettingsIsShown()
+  {
+    this.settingsIsShown = true;
+  }
+
+  toggleSettingsIsNotShown()
+  {
+    this.settingsIsShown = false;
+  }
 
   ngOnInit(): void {
   }

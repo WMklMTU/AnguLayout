@@ -3,148 +3,25 @@
   <div fxFlex="150px" class="buttons-field">
     <div fxLayout="row" fxLayoutAlign="center center">
       <div fxflex>
-        <button class="rating-correction-button-yes">Yes</button>
+        <button
+          class="rating-correction-button-yes"
+          (click)="toggleSettingsIsShown()"
+        >
+          Yes
+        </button>
       </div>
       <div fxflex>
-        <button class="rating-correction-button-no">
+        <button class="rating-correction-button-no"
+        (click)="toggleSettingsIsNotShown()">
           No<br />SCAN-based Monitoring
         </button>
       </div>
     </div>
   </div>
   <div fxFlex="50px"></div>
-  <div fxFlex="25px" class="field-header">Settings</div>
-  <div fxFlex class="settings-field">
-    <div fxLayout="row" fxLayoutAlign="space-between center">
-      <div fxflex>
-        <div class="settings-description">Available Codes:<br /><br /></div>
-        <form>
-          <input
-            class="codes-input-large"
-            type="text"
-            id="availableCodesInput"
-            name="availableCodesInput"
-          />
-        </form>
-      </div>
-      <div fxflex="50px">
-        <div
-          fxLayout="column"
-          fxLayoutAlign="space-between center"
-          style="height: 80px"
-        >
-          <button mat-raised-button color="primary" class="list-button">
-            <mat-icon>arrow_right</mat-icon>
-          </button>
-          <button mat-raised-button color="primary" class="list-button">
-            <mat-icon>arrow_left</mat-icon>
-          </button>
-        </div>
-      </div>
-      <div fxflex>
-        <div class="settings-description">Selected Codes:<br /><br /></div>
-        <form>
-          <input
-            class="codes-input-large"
-            type="text"
-            id="selectedCodesInput"
-            name="selectedCodesInput"
-          />
-        </form>
-      </div>
-      <div fxflex>
-        <div class="settings-description">Interpolate:<br /><br /></div>
-        <select
-          name="interpolate-method"
-          id="interpolate-method"
-          style="width: 100%"
-        >
-          <option value="met0"></option>
-          <option value="met1">Met 1</option>
-          <option value="met2">Met 2</option>
-          <option value="met3">Met 3</option>
-          <option value="met4">Met 4</option>
-        </select>
-        <div>
-          =
-          <form>
-            <input
-              class=""
-              type="text"
-              id="iterpolateParamInput"
-              name="iterpolateParamInput"
-            />
-          </form>
-          <!-- <mat-form-field appearance="fill">
-          <mat-label>Method</mat-label>
-          <select>
-            <option value=""></option>
-            <option value="met1">Met 1</option>
-            <option value="met2">Met 2</option>
-            <option value="met3">Met 3</option>
-            <option value="met4">Met 4</option>
-          </select>
-        </mat-form-field> -->
-          count of<br />independent codes:
-          <div>
-            =
-            <form>
-              <input
-                class=""
-                type="text"
-                id="countOfIndependentCodesInput"
-                name="countOfIndependentCodesInput"
-              />
-            </form>
-            min 2 for linear<br />min 3 for quadratic
-          </div>
-        </div>
-      </div>
-      <div fxflex>
-        Regression:<br /><br />
-        <div fxLayout="column" fxLayoutAlign="center center">
-          <div fxflex>
-            <button class="regression-linear-button">linear</button>
-          </div>
-          <div fxflex>
-            <button class="regression-quadratic-button">quadratic</button>
-          </div>
-          <div fxflex>
-            <button class="calculate-rating-correction--button">
-              calculate rating<br />correction
-            </button>
-          </div>
-        </div>
-      </div>
-      <div fxflex style="background-color: burlywood">
-        <div class="settings-description">
-          Engine list with not sufficient<br />independent Codes:
-        </div>
-        <form>
-          <input
-            class="codes-input-large"
-            type="text"
-            id="engineListInput"
-            name="engineListInput"
-          />
-        </form>
-        <div class="filtered-engines-button">
-          <button mat-raised-button color="primary">
-            <span style="padding-right: 3px">Filtered Engines </span
-            ><mat-icon>post_add</mat-icon>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div fxFlex="25px"></div>
-  <div fxFlex>
-    <!-- <mat-grid-list cols="3">
-      <mat-grid-tile style="width: 50px;">11111</mat-grid-tile>
-      <mat-grid-tile>22222</mat-grid-tile>
-      <mat-grid-tile>333333</mat-grid-tile>
-      <mat-grid-tile>444444</mat-grid-tile>
-    </mat-grid-list> -->
+
+  <div *ngIf="settingsIsShown" fxFlex="25px" class="field-header">Settings</div>
+  <div *ngIf="settingsIsShown" fxFlex class="settings-field">
     <div class="grid-container">
       <div class="grid-item-header">Available Codes:</div>
       <div class="grid-item-header"></div>
@@ -199,7 +76,7 @@
         </div>
         <div class="grid-item-line">
           <div class="interpolate-input-equal">
-            <label>=  </label>
+            <label>= </label>
             <input
               class="iterpolate-param-input"
               type="text"
@@ -224,7 +101,7 @@
 
         <div class="grid-item-line">
           <div class="interpolate-input-equal">
-            <label>=  </label>
+            <label>= </label>
 
             <input
               class="iterpolate-param-input"
@@ -238,8 +115,59 @@
           min 2 for linear<br />min 3 for quadratic
         </div>
       </div>
-      <div class="grid-item">5</div>
-      <div class="grid-item">6</div>
+      <div class="grid-item">
+        <div
+          fxLayout="column"
+          fxLayoutAlign="space-around center"
+          style="height: 200px"
+        >
+          <div fxflex>
+            <div
+              fxLayout="column"
+              fxLayoutAlign="space-around center"
+              style="
+                height: 100px;
+                width: 160px;
+                border: 1px solid rgba(0, 0, 0, 0.8);
+              "
+            >
+              <div fxflex>
+                <button mat-raised-button class="regression-button linear">
+                  linear
+                </button>
+              </div>
+              <div fxflex>
+                <button mat-raised-button class="regression-button quadratic">
+                  quadratic
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div fxflex>
+            <button
+              mat-raised-button
+              class="regression-button calculate-rating-correction"
+            >
+              calculate rating<br />correction
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <input
+          class="codes-input-medium"
+          type="text"
+          id="engineListInput"
+          name="engineListInput"
+        />
+        <div class="filtered-engines-button">
+          <button mat-raised-button color="primary">
+            <span style="padding-right: 3px">Filtered Engines </span
+            ><mat-icon>post_add</mat-icon>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </div>

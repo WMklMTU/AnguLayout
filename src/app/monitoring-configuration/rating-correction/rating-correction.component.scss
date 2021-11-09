@@ -17,7 +17,8 @@
 }
 
 .settings-field {
-  background-color: rgb(100, 150, 200);
+  border-style: solid;
+  border-width: thin;
 }
 
 .rating-correction-button-no {
@@ -41,6 +42,11 @@
   height: 200px;
 }
 
+.codes-input-medium {
+  width: 97%;
+  height: 150px;
+}
+
 .settings-description {
   text-align: center;
   width: 100%;
@@ -48,6 +54,7 @@
 
 .filtered-engines-button {
   margin-top: 5px;
+  margin-left: auto;
   width: 100%;
   justify-content: center;
 }
@@ -59,11 +66,11 @@ mat-grid-tile {
 .grid-container {
   display: grid;
   grid-template-columns: 210px 100px 210px 210px 210px 210px;
-  background-color: #2196f3;
+  //background-color: #2196f3;
 }
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  // background-color: rgba(255, 255, 255, 0.8);
+  // border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 10px;
 }
 .grid-item-line {
@@ -71,7 +78,7 @@ mat-grid-tile {
 }
 
 .grid-item-header {
-  background-color: rgba(255, 255, 255, 0.8);
+  //background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
   text-align: center;
   height: 30px;
@@ -81,7 +88,7 @@ mat-grid-tile {
   margin-bottom: 10px;
 }
 
-.interpolate-method{
+.interpolate-method {
   width: 100%;
 }
 
@@ -90,8 +97,24 @@ mat-grid-tile {
   margin-left: 2px;
 }
 
-.interpolate-input-equal{
+.interpolate-input-equal {
   display: inline-block;
   justify-content: right;
   text-align: right;
+}
+
+.regression-button {
+  width: 130px;
+}
+
+.regression-button.linear {
+  width: 120px;
+}
+
+.regression-button.quadratic {
+  width: 120px;
+}
+
+.regression-button.calculate-rating-correction {
+  width: 120px;
 }
