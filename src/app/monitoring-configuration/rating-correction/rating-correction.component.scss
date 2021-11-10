@@ -55,8 +55,8 @@
 .filtered-engines-button {
   margin-top: 5px;
   margin-left: auto;
-  width: 100%;
   justify-content: center;
+  width: 100%;
 }
 
 mat-grid-tile {
@@ -113,8 +113,14 @@ mat-grid-tile {
 
 .regression-button.quadratic {
   width: 120px;
+  background-color: MidnightBlue;
+  color: white;
 }
 
 .regression-button.calculate-rating-correction {
-  width: 120px;
+  background-color: MidnightBlue;
+  color: white;
+  border-style: solid;
+  border-width:medium;
+  border-color: coral;
 }

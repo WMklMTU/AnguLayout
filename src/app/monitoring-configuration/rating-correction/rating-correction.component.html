@@ -11,8 +11,10 @@
         </button>
       </div>
       <div fxflex>
-        <button class="rating-correction-button-no"
-        (click)="toggleSettingsIsNotShown()">
+        <button
+          class="rating-correction-button-no"
+          (click)="toggleSettingsIsNotShown()"
+        >
           No<br />SCAN-based Monitoring
         </button>
       </div>
@@ -161,8 +163,11 @@
           id="engineListInput"
           name="engineListInput"
         />
-        <div class="filtered-engines-button">
-          <button mat-raised-button color="primary">
+        <div >
+          <button class="filtered-engines-button"
+            mat-raised-button
+            style="background-color: MidnightBlue; color: white"
+          >
             <span style="padding-right: 3px">Filtered Engines </span
             ><mat-icon>post_add</mat-icon>
           </button>
