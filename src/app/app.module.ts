@@ -40,6 +40,7 @@ import { RevisionHistoryComponent } from './revision-history/revision-history.co
 import { SmartFilterComponent } from './monitoring-configuration/scan-selection-filter/smart-filter/smart-filter.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSelectModule } from '@angular/material/select';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent, ChartNG2Component, ChartJSComponent, MonitoringConfigurationComponent, MonitoringParameterComponent, ToolbarComponent, ListOfCalculationComponent, AssignedMonitoringComponent, DetailsSelectedComponent, ExampleCalculationComponent, ScanSelectionFilterComponent, RatingCorrectionComponent, ReferenceDatasetComponent, StatisticalMethodsComponent, AlertSelectionComponent, PublishComponent, EvaluationComponent, AlarmManagementComponent, UserControlComponent, RevisionHistoryComponent, SmartFilterComponent],
@@ -59,7 +60,8 @@ import { MatSelectModule } from '@angular/material/select';
     MatFormFieldModule,
     MatGridListModule,
     MatPaginatorModule,
-    MatSelectModule
+    MatSelectModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent],
