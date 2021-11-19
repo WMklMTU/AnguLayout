@@ -30,6 +30,32 @@ const ELEMENT_DATA: PlotParameter[] = [
     column: 1,
     creationdate: '18.06.2021',
   },
+  {
+    position: 2,
+    monitoringParam: 'FNK',
+    displayName: 'mean_refRef_201',
+    statisticalMethod: 'arithmetical mean',
+    calculationArea: 'reference',
+    reference: 'Ref_2018(1)',
+    Xplus: 3,
+    Xminus: 4,
+    k: 3,
+    column: 1,
+    creationdate: '18.06.2021',
+  },
+  {
+    position: 3,
+    monitoringParam: 'FNK',
+    displayName: 'mean_refRef_201',
+    statisticalMethod: 'arithmetical mean',
+    calculationArea: 'reference',
+    reference: 'Ref_2018(1)',
+    Xplus: 3,
+    Xminus: 4,
+    k: 3,
+    column: 1,
+    creationdate: '18.06.2021',
+  },
 ];
 
 @Component({
