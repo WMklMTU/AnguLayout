@@ -147,3 +147,36 @@
     </div>
   </div>
 </div>
+<div style="bottom: 0px; width: 1600px">
+  Filter:
+  <select name="filter" id="filter">
+    <option value="1"></option>
+    <option value="2">none</option>
+    <option value="3">"FNK"</option>
+  </select>
+  <mat-paginator
+    style="justify-content: center; bottom: 0px"
+    [pageSizeOptions]="[6, 10, 14]"
+    showFirstLastButtons
+    aria-label="Select page of periodic elements"
+  >
+  </mat-paginator>
+  <div fxLayout="row" fxLayoutAlign="space-between start">
+    <div fxFlex style="height: 60px">
+      <mat-checkbox style="padding-right: 10px"
+        >Copy to Monitoring Parameter:
+      </mat-checkbox>
+      <select name="monitoring-parameter" id="monitoring-parameter">
+        <option value="1"></option>
+        <option value="2">"FNK"</option>
+      </select>
+      <button color="primary" mat-raised-button style="margin-left: 10px">
+        Copy
+      </button>
+    </div>
+
+    <div fxFlex style="height: 60px">
+      <button color="primary" mat-raised-button style="margin-left: 10px">Remove Filter</button>
+    </div>
+  </div>
+</div>
