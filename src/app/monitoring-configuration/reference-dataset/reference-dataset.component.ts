@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'mp-reference-dataset',
+  selector: 'mc-reference-dataset',
   templateUrl: './reference-dataset.component.html',
   styleUrls: ['./reference-dataset.component.scss']
 })

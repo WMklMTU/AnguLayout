@@ -62,7 +62,7 @@ const ELEMENT_DATA: PlotParameter[] = [
 ];
 
 @Component({
-  selector: 'mp-alert-selection',
+  selector: 'mc-alert-selection',
   templateUrl: './alert-selection.component.html',
   styleUrls: ['./alert-selection.component.scss'],
 })
