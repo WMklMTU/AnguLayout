@@ -44,9 +44,10 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { TableComponent } from './monitoring-configuration/reference-dataset/table/table.component';
 import { ParametersComponent } from './monitoring-configuration/reference-dataset/parameters/parameters.component';
 import { RdChartComponent } from './monitoring-configuration/reference-dataset/rd-chart/rd-chart.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent, ChartNG2Component, ChartJSComponent, MonitoringConfigurationComponent, MonitoringParameterComponent, ToolbarComponent, ListOfCalculationComponent, AssignedMonitoringComponent, DetailsSelectedComponent, ExampleCalculationComponent, ScanSelectionFilterComponent, RatingCorrectionComponent, ReferenceDatasetComponent, StatisticalMethodsComponent, AlertSelectionComponent, PublishComponent, EvaluationComponent, AlarmManagementComponent, UserControlComponent, RevisionHistoryComponent, SmartFilterComponent, TableComponent, ParametersComponent, RdChartComponent],
+  declarations: [AppComponent, NavigationComponent, HomeComponent, ChartComponent, ChartNG2Component, ChartJSComponent, MonitoringConfigurationComponent, MonitoringParameterComponent, ToolbarComponent, ListOfCalculationComponent, AssignedMonitoringComponent, DetailsSelectedComponent, ExampleCalculationComponent, ScanSelectionFilterComponent, RatingCorrectionComponent, ReferenceDatasetComponent, StatisticalMethodsComponent, AlertSelectionComponent, PublishComponent, EvaluationComponent, AlarmManagementComponent, UserControlComponent, RevisionHistoryComponent, SmartFilterComponent, TableComponent, ParametersComponent, RdChartComponent, LoginComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
